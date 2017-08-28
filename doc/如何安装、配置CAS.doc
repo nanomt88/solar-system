@@ -1,0 +1,568 @@
+Message-ID: <513768187.1567.1433229537106.JavaMail.javamailuser@localhost>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_1566_254682494.1433229537104"
+
+------=_Part_1566_254682494.1433229537104
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>=E5=A6=82=E4=BD=95=E5=AE=89=E8=A3=85=E3=80=81=E9=85=8D=E7=BD=AEC=
+AS</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>=E5=A6=82=E4=BD=95=E5=AE=89=E8=A3=85=E3=80=81=E9=85=8D=E7=BD=AECAS<=
+/h1>
+    <div class=3D"Section1">
+        <p><strong><span style=3D"color: rgb(153,51,0);">JDK _1.7=E5=AE=89=
+=E8=A3=85&nbsp;</span></strong><br /><span style=3D"color: rgb(0,0,0);">=E6=
+=AD=A4=E5=A4=84=E7=9C=81=E7=95=A5&nbsp;</span></p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><strong><span styl=
+e=3D"color: rgb(153,51,0);">Tomcat7=E5=AE=89=E8=A3=85&nbsp;</span></strong>=
+<br /><span style=3D"color: rgb(0,0,0);">=E6=AD=A4=E5=A4=84=E7=9C=81=E7=95=
+=A5&nbsp;</span></p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><span style=3D"col=
+or: rgb(0,0,0);">=E6=9C=8D=E5=8A=A1=E7=AB=AF=E9=85=8D=E7=BD=AE&nbsp;</span>=
+</p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><strong><span styl=
+e=3D"color: rgb(153,51,0);">1=E3=80=81=E6=9F=A5=E7=9C=8Blinux java=E7=89=88=
+=E6=9C=AC&nbsp;</span></strong></p>
+<p><span style=3D"color: rgb(0,0,0);"><br /></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">java -version</pre>=20
+</div>
+</div>
+<p><br /><strong><span style=3D"color: rgb(153,51,0);">2=E3=80=81 =E5=88=9B=
+=E5=BB=BA=E8=AF=81=E4=B9=A6</span></strong></p>
+<p><span style=3D"color: rgb(0,0,0);"><br /></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">keytool -genkey -alias tomcat -keyalg RSA -keystore /home/SSL/m=
+ykeystore -dname &quot;CN=3Dsso.ippjr.com,OU=3Dsso.ippjr.com,O=3Dippjr,L=3D=
+FZ,ST=3DFZ,C=3DCN&quot;&nbsp;
+-keypass nloallh -storepass nloallh&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><strong><span style=3D"color: rgb(153,51,0);">3=E3=80=81=E5=AF=BC=
+=E5=87=BA=E8=AF=81=E4=B9=A6=EF=BC=88=E5=AF=BC=E5=87=BA=E7=9A=84=E8=AF=81=E4=
+=B9=A6=E5=8F=AF=E4=BB=A5=E7=94=A8=E6=9D=A5=E5=AE=89=E8=A3=85=E5=88=B0=E5=85=
+=B6=E4=BB=96=E6=9C=8D=E5=8A=A1=E5=99=A8=EF=BC=89&nbsp;</span></strong></p>
+<p><strong><span style=3D"color: rgb(153,51,0);"><br /></span></strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">keytool -export -alias tomcat -keystore /home/SSL/mykeystore -f=
+ile /home/SSL/mycerts.crt -storepass nloallh&nbsp;</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><strong><span styl=
+e=3D"color: rgb(153,51,0);">=E5=88=A0=E9=99=A4SSL=E8=AF=81=E4=B9=A6=EF=BC=
+=88=E5=8F=AF=E8=83=BD=E4=BC=9A=E7=94=A8=E5=88=B0=E7=9A=84=E6=AD=A5=E9=AA=A4=
+=EF=BC=89&nbsp;</span></strong></p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">keytool -list -rfc -keystore /opt/jdk1.7.0_71/jre/lib/security/=
+cacerts -storepass changeit&nbsp;
+
+keytool -delete -alias tomcat -keystore /opt/jdk1.7.0_71/jre/lib/security/c=
+acerts -storepass changeit&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><strong><span style=3D"color: rgb(153,51,0);">4=E3=80=81=E6=9F=A5=
+=E7=9C=8Btomcat =E5=BC=95=E7=9A=84jre&nbsp;</span></strong></p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">whereis java
+ps -ef|grep tomcat</pre>=20
+</div>
+</div>
+<p><br /><span style=3D"color: rgb(153,51,0);"><strong>5=E3=80=81=E4=B8=BA=
+=E5=AE=A2=E6=88=B7=E7=AB=AF=E7=9A=84JVM=E5=AF=BC=E5=85=A5=E8=AF=81=E4=B9=A6=
+=EF=BC=88=E5=88=A0=E9=99=A4=E5=8E=9F=E6=9D=A5=E7=9A=84cacerts=EF=BC=89 =E8=
+=A6=81=E7=94=A8root=E7=94=A8=E6=88=B7=E4=B8=8D=E7=84=B6=E6=B2=A1=E6=9C=89=
+=E5=86=99=E6=9D=83=E9=99=90&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">keytool -import -keystore &quot;/opt/jdk1.7.0_71/jre/lib/securi=
+ty/cacerts&quot; -file /home/SSL/mycerts.crt -alias tomcat =EF=BC=88CentOS=
+=E4=B8=8B=EF=BC=89&nbsp;</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: powershell; gutter: false" style=3D=
+"font-size:12px;">keytool -import -keystore D:/JavaDev/Java/jdk1.7.0_71/jre=
+/lib/security/cacerts -file E:/CRTDownload/Uploads/mycerts.crt -alias tomca=
+t=EF=BC=88win7=E4=B8=8B=EF=BC=89&nbsp;
+keytool -import -keystore D:/JavaDev/Java/jre7/lib/security/cacerts -file E=
+:/CRTDownload/Uploads/mycerts.crt -alias tomcat=EF=BC=88win7=E4=B8=8B=EF=BC=
+=89&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><strong><span style=3D"color: rgb(153,51,0);">6=E3=80=81=E5=9C=A8=
+=E6=9C=8D=E5=8A=A1=E5=99=A8=E7=9A=84hosts=E6=96=87=E4=BB=B6=E5=8A=A0=E5=85=
+=A5&nbsp;</span></strong></p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: bash; gutter: false" style=3D"font-=
+size:12px;">vim etc/hosts&nbsp;
+127.0.0.1 sso.ippjr.com&nbsp;</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><span style=3D"col=
+or: rgb(0,0,0);">=E8=B7=AF=E5=BE=84=E5=9C=A8/etc/hosts =E5=BB=BA=E8=AE=AE=
+=E7=9B=B4=E6=8E=A5=E6=8C=89=E7=94=9F=E4=BA=A7=E6=9C=8D=E5=8A=A1=E5=99=A8=E4=
+=B8=8A=E7=9A=84hostname=E6=9D=A5=E5=91=BD=E5=90=8D&nbsp;</span><br /><span =
+style=3D"color: rgb(0,0,0);">=E4=B8=8D=E7=84=B6=E8=A6=81=E9=87=8D=E5=90=AF=
+=E6=9C=8D=E5=8A=A1=E5=99=A8 =E6=94=B9=E4=B8=BA127.0.0.1 <a href=3D"http://s=
+so.ippjr.com" class=3D"external-link" rel=3D"nofollow">sso.ippjr.com</a>&nb=
+sp;</span><br /><span style=3D"color: rgb(0,0,0);">cat /etc/sysconfig/netwo=
+rk =E6=9F=A5=E7=9C=8B=E4=B8=BB=E6=9C=BA=E5=90=8D&nbsp;</span><br /><br /><s=
+pan style=3D"color: rgb(153,51,0);"><strong>7=E3=80=81=E4=BF=AE=E6=94=B9tom=
+cat=E7=9A=84=E4=B8=BB=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6server.xml&nbsp;</=
+strong></span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Eclipse; brush: xml; gutter: false" style=3D"font-size=
+:12px;">&lt;Connector port=3D&quot;8443&quot;&nbsp;
+protocol=3D&quot;HTTP/1.1&quot;&nbsp;
+SSLEnabled=3D&quot;true&quot;&nbsp;
+maxThreads=3D&quot;150&quot;&nbsp;
+scheme=3D&quot;https&quot;&nbsp;
+secure=3D&quot;true&quot;&nbsp;
+clientAuth=3D&quot;false&quot;&nbsp;
+sslProtocol=3D&quot;TLS&quot;&nbsp;
+keystoreFile=3D&quot;/home/SSL/mykeystore&quot;&nbsp;
+keystorePass=3D&quot;nloallh&quot; /&gt;&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><span style=3D"color: rgb(0,0,0);">=E6=B3=A8=E9=87=8A=E4=BB=A5=E4=
+=B8=8B=E5=86=85=E5=AE=B9=EF=BC=88=E8=8B=A5=E6=B2=A1=E6=9C=89=E6=AD=A4=E8=A1=
+=8C=E8=B7=B3=E8=BF=87=E5=8D=B3=E5=8F=AF=EF=BC=89&nbsp;</span></p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Eclipse; brush: xml; gutter: false" style=3D"font-size=
+:12px;">&lt;Listener className=3D&quot;org.apache.catalina.core.AprLifecycl=
+eListener&quot; SSLEngine=3D&quot;on&quot; /&gt;&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><span style=3D"color: rgb(153,51,0);"><strong>8=E3=80=81=E9=83=A8=
+=E7=BD=B2cas.war&nbsp;</strong></span></p>
+<p><br /><span style=3D"color: rgb(0,0,0);">=E4=B8=8B=E8=BD=BD=EF=BC=9Acas-=
+server-4.0.0-release.tar.gz&nbsp;</span><br /><span style=3D"color: rgb(0,0=
+,0);">=E8=A7=A3=E5=8E=8B=E5=90=8E=E6=8B=B7=E8=B4=9Dcas-server-4.0.0\modules=
+=E4=B8=8Bcas-server-webapp-4.0.0.war&nbsp;</span><br /><span style=3D"color=
+: rgb(0,0,0);">=E9=87=8D=E5=91=BD=E5=90=8D=E4=B8=BAcas.war=E5=90=8E=E6=8B=
+=B7=E8=B4=9D=E5=88=B0=E6=9C=8D=E5=8A=A1=E5=99=A8Tomcat\webapps=E4=B8=8B=E5=
+=8D=B3=E5=8F=AF&nbsp;</span><br /><br /><span style=3D"color: rgb(0,0,0);">=
+=E7=84=B6=E5=90=8E=E5=9C=A8=E5=AE=A2=E6=88=B7=E7=AB=AF=E6=9C=8D=E5=8A=A1=E5=
+=99=A8host=E5=8A=A0=E5=85=A5&nbsp;</span><br /><span style=3D"color: rgb(0,=
+0,0);">=E6=9C=8D=E5=8A=A1=E5=99=A8ip=E5=9C=B0=E5=9D=80 <a href=3D"http://ss=
+o.ippjr.com" class=3D"external-link" rel=3D"nofollow">sso.ippjr.com</a>&nbs=
+p;</span><br /><br /><span style=3D"color: rgb(0,0,0);">=E7=84=B6=E5=90=8E=
+=E8=BE=93=E5=85=A5</span><a href=3D"https://sso.wsria.com:8443/cas/login" c=
+lass=3D"external-link" rel=3D"nofollow">https://sso.wsria.com:8443/cas/logi=
+n</a><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><span style=3D"c=
+olor: rgb(0,0,0);">=E5=8D=B3=E5=8F=AF=E6=AD=A3=E5=B8=B8=E8=AE=BF=E9=97=AE&n=
+bsp;</span><br /><br /><span style=3D"color: rgb(0,0,0);">=E5=AE=A2=E6=88=
+=B7=E7=AB=AF=E9=85=8D=E7=BD=AE&nbsp;</span><br /><br /><span style=3D"color=
+: rgb(153,51,0);"><strong>1=E3=80=81=E4=B8=8B=E8=BD=BDcas-client-3.3.3-rele=
+ase.zip&nbsp;</strong></span></p>
+<p><span style=3D"color: rgb(0,0,0);"><br /></span></p>
+<p><span style=3D"color: rgb(0,0,0);">=E5=9C=A8modules=E6=96=87=E4=BB=B6=E5=
+=A4=B9=E4=B8=AD=E6=9C=89=E9=9C=80=E8=A6=81=E7=9A=84jar=E5=8C=85=EF=BC=8C=E8=
+=AF=B7=E6=A0=B9=E6=8D=AE=E8=87=AA=E5=B7=B1=E7=9A=84=E9=A1=B9=E7=9B=AE=E6=83=
+=85=E5=86=B5=E9=80=89=E6=8B=A9=E4=BD=BF=E7=94=A8&nbsp;</span><br /><span st=
+yle=3D"color: rgb(0,0,0);">=E7=84=B6=E5=90=8E=E4=BB=8Etarget=E7=9B=AE=E5=BD=
+=95=E4=B8=AD=E5=A4=8D=E5=88=B6cas-client-core-3.2.1.jar=E5=88=B0=E5=BA=94=
+=E7=94=A8=E7=9A=84WEB-INF/lib=E7=9B=AE=E5=BD=95=E4=B8=AD=EF=BC=88Pom=E4=B8=
+=AD=E6=B7=BB=E5=8A=A0=E4=BA=86=E5=8D=B3=E5=8F=AF=E7=9C=81=E7=95=A5=EF=BC=89=
+&nbsp;</span><br /><br /><strong><span style=3D"color: rgb(153,51,0);">2=E3=
+=80=81Pom.xml=E6=B7=BB=E5=8A=A0&nbsp;</span></strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Eclipse; brush: xml; gutter: false" style=3D"font-size=
+:12px;">&lt;dependency&gt;&nbsp;
+&lt;groupId&gt;org.jasig.cas.client&lt;/groupId&gt;&nbsp;
+&lt;artifactId&gt;cas-client-core&lt;/artifactId&gt;&nbsp;
+&lt;version&gt;3.2.1&lt;/version&gt;&nbsp;
+&lt;/dependency&gt;&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><strong><span style=3D"color: rgb(153,51,0);">3=E3=80=81web.xml=E6=
+=B7=BB=E5=8A=A0=E4=BB=A5=E4=B8=8B=E9=85=8D=E7=BD=AE&nbsp;</span></strong><b=
+r /><br /></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Eclipse; brush: xml; gutter: false" style=3D"font-size=
+:12px;">&lt;!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D =E5=8D=95=E7=82=B9=E7=99=BB=E5=BD=95/=E7=99=BB=E5=87=BA =3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D --&gt=
+;&nbsp;
+
+&lt;!-- =E8=AF=A5=E8=BF=87=E6=BB=A4=E5=99=A8=E7=94=A8=E4=BA=8E=E5=AE=9E=E7=
+=8E=B0=E5=8D=95=E7=82=B9=E7=99=BB=E5=87=BA=E5=8A=9F=E8=83=BD=EF=BC=8C=E5=8F=
+=AF=E9=80=89=E9=85=8D=E7=BD=AE=E3=80=82 --&gt;&nbsp;
+&lt;filter&gt;&nbsp;
+&lt;filter-name&gt;CAS Single Sign Out Filter&lt;/filter-name&gt;&nbsp;
+&lt;filter-class&gt;org.jasig.cas.client.session.SingleSignOutFilter&lt;/fi=
+lter-class&gt;&nbsp;
+&lt;/filter&gt;&nbsp;
+
+&lt;!-- =E8=AF=A5=E8=BF=87=E6=BB=A4=E5=99=A8=E8=B4=9F=E8=B4=A3=E7=94=A8=E6=
+=88=B7=E7=9A=84=E8=AE=A4=E8=AF=81=E5=B7=A5=E4=BD=9C=EF=BC=8C=E5=BF=85=E9=A1=
+=BB=E5=90=AF=E7=94=A8=E5=AE=83 --&gt;&nbsp;
+&lt;filter&gt;&nbsp;
+&lt;filter-name&gt;CAS Authentication Filter&lt;/filter-name&gt;&nbsp;
+&lt;filter-class&gt;org.jasig.cas.client.authentication.AuthenticationFilte=
+r&lt;/filter-class&gt;&nbsp;
+&lt;init-param&gt;&nbsp;
+&lt;param-name&gt;casServerLoginUrl&lt;/param-name&gt;&nbsp;
+&lt;param-value&gt;https://sso.ippjr.com:8443/cas/login&lt;/param-value&gt;=
+&nbsp;
+&lt;/init-param&gt;&nbsp;
+&lt;init-param&gt;&nbsp;
+&lt;param-name&gt;serverName&lt;/param-name&gt;&nbsp;
+&lt;param-value&gt;http://www.ippjr.com:8080&lt;/param-value&gt;&nbsp;
+&lt;/init-param&gt;&nbsp;
+&lt;/filter&gt;&nbsp;
+
+&lt;!-- =E8=AF=A5=E8=BF=87=E6=BB=A4=E5=99=A8=E8=B4=9F=E8=B4=A3=E5=AF=B9Tick=
+et=E7=9A=84=E6=A0=A1=E9=AA=8C=E5=B7=A5=E4=BD=9C=EF=BC=8C=E5=BF=85=E9=A1=BB=
+=E5=90=AF=E7=94=A8=E5=AE=83 --&gt;&nbsp;
+&lt;filter&gt;&nbsp;
+&lt;filter-name&gt;CAS Validation Filter&lt;/filter-name&gt;&nbsp;
+&lt;filter-class&gt;org.jasig.cas.client.validation.Cas10TicketValidationFi=
+lter&lt;/filter-class&gt;&nbsp;
+&lt;init-param&gt;&nbsp;
+&lt;param-name&gt;casServerUrlPrefix&lt;/param-name&gt;&nbsp;
+&lt;param-value&gt;https://sso.ippjr.com:8443/cas&lt;/param-value&gt;&nbsp;
+&lt;/init-param&gt;&nbsp;
+&lt;init-param&gt;&nbsp;
+&lt;param-name&gt;serverName&lt;/param-name&gt;&nbsp;
+&lt;param-value&gt;http://www.ippjr.com:8080&lt;/param-value&gt;&nbsp;
+&lt;/init-param&gt;&nbsp;
+&lt;init-param&gt;&nbsp;
+&lt;param-name&gt;redirectAfterValidation&lt;/param-name&gt;&nbsp;
+&lt;param-value&gt;true&lt;/param-value&gt;&nbsp;
+&lt;/init-param&gt;&nbsp;
+&lt;/filter&gt;&nbsp;
+
+&lt;!-- =E8=AF=A5=E8=BF=87=E6=BB=A4=E5=99=A8=E8=B4=9F=E8=B4=A3=E5=AE=9E=E7=
+=8E=B0HttpServletRequest=E8=AF=B7=E6=B1=82=E7=9A=84=E5=8C=85=E8=A3=B9=EF=BC=
+=8C&nbsp;
+=E6=AF=94=E5=A6=82=E5=85=81=E8=AE=B8=E5=BC=80=E5=8F=91=E8=80=85=E9=80=9A=E8=
+=BF=87HttpServletRequest=E7=9A=84getRemoteUser()=E6=96=B9=E6=B3=95=E8=8E=B7=
+=E5=BE=97SSO=E7=99=BB=E5=BD=95=E7=94=A8=E6=88=B7=E7=9A=84=E7=99=BB=E5=BD=95=
+=E5=90=8D=EF=BC=8C=E5=8F=AF=E9=80=89=E9=85=8D=E7=BD=AE=E3=80=82 --&gt;&nbsp=
+;
+&lt;filter&gt;&nbsp;
+&lt;filter-name&gt;CAS HttpServletRequest Wrapper Filter&lt;/filter-name&gt=
+;&nbsp;
+&lt;filter-class&gt;org.jasig.cas.client.util.HttpServletRequestWrapperFilt=
+er&lt;/filter-class&gt;&nbsp;
+&lt;/filter&gt;&nbsp;
+
+&lt;!-- =E8=AF=A5=E8=BF=87=E6=BB=A4=E5=99=A8=E4=BD=BF=E5=BE=97=E5=BC=80=E5=
+=8F=91=E8=80=85=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87org.jasig.cas.client.uti=
+l.AssertionHolder=E6=9D=A5=E8=8E=B7=E5=8F=96=E7=94=A8=E6=88=B7=E7=9A=84=E7=
+=99=BB=E5=BD=95=E5=90=8D=E3=80=82&nbsp;
+=E6=AF=94=E5=A6=82AssertionHolder.getAssertion().getPrincipal().getName()=
+=E3=80=82--&gt;&nbsp;
+&lt;filter&gt;&nbsp;
+&lt;filter-name&gt;CAS Assertion Thread Local Filter&lt;/filter-name&gt;&nb=
+sp;
+&lt;filter-class&gt;org.jasig.cas.client.util.AssertionThreadLocalFilter&lt=
+;/filter-class&gt;&nbsp;
+&lt;/filter&gt;&nbsp;
+
+&lt;filter-mapping&gt;&nbsp;
+&lt;filter-name&gt;CAS Single Sign Out Filter&lt;/filter-name&gt;&nbsp;
+&lt;url-pattern&gt;/*&lt;/url-pattern&gt;&nbsp;
+&lt;/filter-mapping&gt;&nbsp;
+&lt;filter-mapping&gt;&nbsp;
+&lt;filter-name&gt;CAS Authentication Filter&lt;/filter-name&gt;&nbsp;
+&lt;url-pattern&gt;/*&lt;/url-pattern&gt;&nbsp;
+&lt;/filter-mapping&gt;&nbsp;
+&lt;filter-mapping&gt;&nbsp;
+&lt;filter-name&gt;CAS Validation Filter&lt;/filter-name&gt;&nbsp;
+&lt;url-pattern&gt;/*&lt;/url-pattern&gt;&nbsp;
+&lt;/filter-mapping&gt;&nbsp;
+&lt;filter-mapping&gt;&nbsp;
+&lt;filter-name&gt;CAS HttpServletRequest Wrapper Filter&lt;/filter-name&gt=
+;&nbsp;
+&lt;url-pattern&gt;/*&lt;/url-pattern&gt;&nbsp;
+&lt;/filter-mapping&gt;&nbsp;
+&lt;filter-mapping&gt;&nbsp;
+&lt;filter-name&gt;CAS Assertion Thread Local Filter&lt;/filter-name&gt;&nb=
+sp;
+&lt;url-pattern&gt;/*&lt;/url-pattern&gt;&nbsp;
+&lt;/filter-mapping&gt;&nbsp;
+
+&lt;listener&gt;&nbsp;
+&lt;listener-class&gt;org.jasig.cas.client.session.SingleSignOutHttpSession=
+Listener&lt;/listener-class&gt;&nbsp;
+&lt;/listener&gt;&nbsp;
+&lt;!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D =E5=8D=95=E7=82=B9=E7=99=BB=E5=BD=95/=E7=99=BB=E5=87=BA=E7=BB=93=E6=
+=9D=9F =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D --&gt; </pre>=20
+</div>
+</div>
+<p><br /><br /><span style=3D"color: rgb(153,51,0);"><strong>4=E3=80=81=E5=
+=AE=A2=E6=88=B7=E7=AB=AF=E6=9C=8D=E5=8A=A1=E5=99=A8=E5=AF=BC=E5=85=A5=E8=AF=
+=81=E4=B9=A6&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Eclipse; brush: bash; gutter: false" style=3D"font-siz=
+e:12px;">keytool -import -keystore &quot;/opt/jdk1.7.0_71/jre/lib/security/=
+cacerts&quot; -file /home/SSL/mycerts.crt -alias tomcat =EF=BC=88CentOS=E4=
+=B8=8B=EF=BC=89</pre>=20
+</div>
+</div>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: powershell; gutter: false" style=3D=
+"font-size:12px;">keytool -import -keystore D:/JavaDev/Java/jdk1.7.0_71/jre=
+/lib/security/cacerts -file E:/CRTDownload/Uploads/mycerts.crt -alias tomca=
+t=EF=BC=88win7=E4=B8=8B=EF=BC=89&nbsp;
+keytool -import -keystore D:/JavaDev/Java/jre7/lib/security/cacerts -file E=
+:/CRTDownload/Uploads/mycerts.crt -alias tomcat=EF=BC=88win7=E4=B8=8B=EF=BC=
+=89&nbsp;</pre>=20
+</div>
+</div>
+<p><br /><br /><strong><span style=3D"color: rgb(153,51,0);">5=E3=80=81=E5=
+=AE=A2=E6=88=B7=E7=AB=AF=E6=9C=8D=E5=8A=A1=E5=99=A8host=E5=8A=A0=E5=85=A5&n=
+bsp;</span></strong><br /><span style=3D"color: rgb(0,0,0);">127.0.0.1&nbsp=
+;</span><a href=3D"http://www.ippjr.com/" class=3D"external-link" rel=3D"no=
+follow">www.ippjr.com</a><span style=3D"color: rgb(0,0,0);">&nbsp;</span><b=
+r /><br /><span style=3D"color: rgb(0,0,0);">=E6=B5=8F=E8=A7=88=E5=99=A8=E8=
+=BE=93=E5=85=A5</span><a href=3D"http://www.ippjr.com:8080/springMvc/" clas=
+s=3D"external-link" rel=3D"nofollow">http://www.ippjr.com:8080/springMvc/</=
+a><span style=3D"color: rgb(0,0,0);">&nbsp;</span><br /><span style=3D"colo=
+r: rgb(0,0,0);">=E5=8D=B3=E4=BC=9A=E8=B7=B3=E8=BD=AC=E5=88=B0&nbsp;</span><=
+br /><a href=3D"https://sso.ippjr.com:8443/cas/login?service=3Dhttp" class=
+=3D"external-link" rel=3D"nofollow">https://sso.ippjr.com:8443/cas/login?se=
+rvice=3Dhttp</a><span style=3D"color: rgb(0,0,0);">%3A%2F%2F</span><a href=
+=3D"http://www.ippjr.com/" class=3D"external-link" rel=3D"nofollow">www.ipp=
+jr.com</a><span style=3D"color: rgb(0,0,0);">%3A8080%2Fspringmvc%2F&nbsp;</=
+span><br /><span style=3D"color: rgb(0,0,0);">=E7=94=A8=E6=88=B7=E5=90=8D=
+=EF=BC=9Acasuser&nbsp;</span><br /><span style=3D"color: rgb(0,0,0);">=E5=
+=AF=86=E7=A0=81=EF=BC=9AMellon&nbsp;</span><br /><span style=3D"color: rgb(=
+0,0,0);">=E4=BC=9A=E8=B7=B3=E5=9B=9E=E9=A1=B5=E9=9D=A2&nbsp;</span><br /><a=
+ href=3D"http://www.ippjr.com:8080/springmvc/" class=3D"external-link" rel=
+=3D"nofollow">http://www.ippjr.com:8080/springmvc/</a></p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_1566_254682494.1433229537104--
