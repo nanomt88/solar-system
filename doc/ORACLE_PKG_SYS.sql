@@ -2,31 +2,31 @@ CREATE OR REPLACE PACKAGE PKG_SYS AUTHID DEFINER IS
 
     /**************************************************************************
      -- Copyright 2013 TPRI. All Rights Reserved.
-     -- Summary : ϵͳ������
-     -- Author  : ��ͨ���䲿�滮�о�Ժ���׺�׿��
+     -- Summary : 系统处理包
+     -- Author  : 交通运输部规划研究院（白贺卓）
      -- Since   : 2013-08-09
     **************************************************************************/
 
     /**************************************************************************
-     -- Summary : �����α�
-     -- return  : RET_REFCUR �����ز����α����ݣ�
+     -- Summary : 参照游标
+     -- return  : RET_REFCUR （返回参照游标数据）
     **************************************************************************/
     TYPE RET_REFCUR IS REF CURSOR;
 
     /**************************************************************************
-     -- Summary : ����ʵʱ���ݣ��ο���ʱ���ݣ�
-     -- Param   : P_TASK ��������
-     -- Param   : P_TEXT ��־�ı�
-     -- Param   : P_REF01 �ο��ֶ�01��Ĭ��NULL��
-     -- Param   : P_REF02 �ο��ֶ�02��Ĭ��NULL��
-     -- Param   : P_REF03 �ο��ֶ�03��Ĭ��NULL��
-     -- Param   : P_REF04 �ο��ֶ�04��Ĭ��NULL��
-     -- Param   : P_REF05 �ο��ֶ�05��Ĭ��NULL��
-     -- Param   : P_REF06 �ο��ֶ�06��Ĭ��NULL��
-     -- Param   : P_REF07 �ο��ֶ�07��Ĭ��NULL��
-     -- Param   : P_REF08 �ο��ֶ�08��Ĭ��NULL��
-     -- Param   : P_REF09 �ο��ֶ�09��Ĭ��NULL��
-     -- Param   : P_REF10 �ο��ֶ�10��Ĭ��NULL��
+     -- Summary : 生成实时数据（参考临时数据）
+     -- Param   : P_TASK 任务名称
+     -- Param   : P_TEXT 日志文本
+     -- Param   : P_REF01 参考字段01（默认NULL）
+     -- Param   : P_REF02 参考字段02（默认NULL）
+     -- Param   : P_REF03 参考字段03（默认NULL）
+     -- Param   : P_REF04 参考字段04（默认NULL）
+     -- Param   : P_REF05 参考字段05（默认NULL）
+     -- Param   : P_REF06 参考字段06（默认NULL）
+     -- Param   : P_REF07 参考字段07（默认NULL）
+     -- Param   : P_REF08 参考字段08（默认NULL）
+     -- Param   : P_REF09 参考字段09（默认NULL）
+     -- Param   : P_REF10 参考字段10（默认NULL）
     **************************************************************************/
     PROCEDURE PUT_LOG
     (
@@ -45,9 +45,9 @@ CREATE OR REPLACE PACKAGE PKG_SYS AUTHID DEFINER IS
     );
     
     /**************************************************************************
-     -- Summary : �����ļ�����
-     -- Param   : P_DATE �ο�ʱ�䣨Ĭ��Ϊ��ǰʱ�䣩
-     -- Param   : P_RET_REFCUR �����α��������
+     -- Summary : 清理文件数据
+     -- Param   : P_DATE 参考时间（默认为当前时间）
+     -- Param   : P_RET_REFCUR 参照游标输出参数
     **************************************************************************/
     PROCEDURE CLEAR_FILES(P_RET_REFCUR OUT RET_REFCUR);
 
@@ -57,19 +57,19 @@ END PKG_SYS;
 CREATE OR REPLACE PACKAGE BODY PKG_SYS IS
 
     /**************************************************************************
-     -- Summary : ����ʵʱ���ݣ��ο���ʱ���ݣ�
-     -- Param   : P_TASK ��������
-     -- Param   : P_TEXT ��־�ı�
-     -- Param   : P_REF01 �ο��ֶ�01��Ĭ��NULL��
-     -- Param   : P_REF02 �ο��ֶ�02��Ĭ��NULL��
-     -- Param   : P_REF03 �ο��ֶ�03��Ĭ��NULL��
-     -- Param   : P_REF04 �ο��ֶ�04��Ĭ��NULL��
-     -- Param   : P_REF05 �ο��ֶ�05��Ĭ��NULL��
-     -- Param   : P_REF06 �ο��ֶ�06��Ĭ��NULL��
-     -- Param   : P_REF07 �ο��ֶ�07��Ĭ��NULL��
-     -- Param   : P_REF08 �ο��ֶ�08��Ĭ��NULL��
-     -- Param   : P_REF09 �ο��ֶ�09��Ĭ��NULL��
-     -- Param   : P_REF10 �ο��ֶ�10��Ĭ��NULL��
+     -- Summary : 生成实时数据（参考临时数据）
+     -- Param   : P_TASK 任务名称
+     -- Param   : P_TEXT 日志文本
+     -- Param   : P_REF01 参考字段01（默认NULL）
+     -- Param   : P_REF02 参考字段02（默认NULL）
+     -- Param   : P_REF03 参考字段03（默认NULL）
+     -- Param   : P_REF04 参考字段04（默认NULL）
+     -- Param   : P_REF05 参考字段05（默认NULL）
+     -- Param   : P_REF06 参考字段06（默认NULL）
+     -- Param   : P_REF07 参考字段07（默认NULL）
+     -- Param   : P_REF08 参考字段08（默认NULL）
+     -- Param   : P_REF09 参考字段09（默认NULL）
+     -- Param   : P_REF10 参考字段10（默认NULL）
     **************************************************************************/
     PROCEDURE PUT_LOG
     (
@@ -118,8 +118,8 @@ CREATE OR REPLACE PACKAGE BODY PKG_SYS IS
     END PUT_LOG;
 
     /**************************************************************************
-     -- Summary : �����ļ�����
-     -- Param   : P_DATE �ο�ʱ�䣨Ĭ��Ϊ��ǰʱ�䣩
+     -- Summary : 清理文件数据
+     -- Param   : P_DATE 参考时间（默认为当前时间）
     **************************************************************************/
     PROCEDURE CLEAR_FILES(P_RET_REFCUR OUT RET_REFCUR) IS
         V_DATE TIMESTAMP := SYSTIMESTAMP;

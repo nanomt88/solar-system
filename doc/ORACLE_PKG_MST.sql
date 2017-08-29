@@ -1,16 +1,16 @@
 CREATE OR REPLACE PACKAGE PKG_MST AUTHID DEFINER IS
     /**************************************************************************
      -- Copyright 2013 TPRI. All Rights Reserved.
-     -- Summary : »ù´¡ÐÅÏ¢´¦Àí°ü
-     -- Author  : ½»Í¨ÔËÊä²¿¹æ»®ÑÐ¾¿Ôº£¨°×ºØ×¿£©
+     -- Summary : åŸºç¡€ä¿¡æ¯å¤„ç†åŒ…
+     -- Author  : äº¤é€šè¿è¾“éƒ¨è§„åˆ’ç ”ç©¶é™¢ï¼ˆç™½è´ºå“ï¼‰
      -- Since   : 2013-04-26
     **************************************************************************/
 
-    -- ÏµÍ³ÈÎÎñ£º»º´æ¹ÜÀí»ú¹¹
+    -- ç³»ç»Ÿä»»åŠ¡ï¼šç¼“å­˜ç®¡ç†æœºæž„
     C_TASK_CACHE_MST_ORG CONSTANT VARCHAR2(13) := 'CACHE_MST_ORG';
 
     /**************************************************************************
-     -- Summary : ÖØÐÂÉú³É¹ÜÀí»ú¹¹¹ØÏµÊý¾Ý
+     -- Summary : é‡æ–°ç”Ÿæˆç®¡ç†æœºæž„å…³ç³»æ•°æ®
     **************************************************************************/
     PROCEDURE REGEN_ORG_REF;
 
@@ -19,38 +19,38 @@ END PKG_MST;
 CREATE OR REPLACE PACKAGE BODY PKG_MST IS
 
     /**************************************************************************
-     -- Summary : ÖØÐÂÉú³É¹ÜÀí»ú¹¹¹ØÏµÊý¾Ý
+     -- Summary : é‡æ–°ç”Ÿæˆç®¡ç†æœºæž„å…³ç³»æ•°æ®
     **************************************************************************/
     PROCEDURE REGEN_ORG_REF IS
-         TYPE IDX_ORGID_TABLE IS TABLE OF VARCHAR2(32) INDEX BY BINARY_INTEGER; --¶¨Òå±íÀàÐÍ
-         V_ORGID_LIST IDX_ORGID_TABLE;   --ÉùÃ÷±íÀàÐÍ±äÁ¿ 
-         V_I BINARY_INTEGER;   --ÉùÃ÷Ò»¸öineger±äÁ¿ ÓÃÓÚÑ­»·¿ØÖÆ
+         TYPE IDX_ORGID_TABLE IS TABLE OF VARCHAR2(32) INDEX BY BINARY_INTEGER; --å®šä¹‰è¡¨ç±»åž‹
+         V_ORGID_LIST IDX_ORGID_TABLE;   --å£°æ˜Žè¡¨ç±»åž‹å˜é‡ 
+         V_I BINARY_INTEGER;   --å£°æ˜Žä¸€ä¸ªinegerå˜é‡ ç”¨äºŽå¾ªçŽ¯æŽ§åˆ¶
     BEGIN
-         DELETE FROM MST_ORG_REF;  --É¾³ýÈ«±í
-         --×°ÔØÊý¾Ýµ½±íÀàÐÍ±äÁ¿ÖÐÈ¥
+         DELETE FROM MST_ORG_REF;  --åˆ é™¤å…¨è¡¨
+         --è£…è½½æ•°æ®åˆ°è¡¨ç±»åž‹å˜é‡ä¸­åŽ»
          SELECT ORG_ID BULK COLLECT INTO V_ORGID_LIST FROM MST_ORG  
                 START WITH PARENT_ID IS NULL
                 CONNECT BY PRIOR ORG_ID = PARENT_ID;
-         --È¡µÃµÚÒ»¸öË÷ÒýÖµ
+         --å–å¾—ç¬¬ä¸€ä¸ªç´¢å¼•å€¼
          V_I := V_ORGID_LIST.FIRST;    
          WHILE V_I IS NOT NULL LOOP
                DECLARE 
                     V_ORGID MST_ORG.ORG_ID%TYPE := V_ORGID_LIST(V_I);
-                    --ÉùÃ÷Ò»¸öÓÎ±ê
+                    --å£°æ˜Žä¸€ä¸ªæ¸¸æ ‡
                     CURSOR CUR_ORG_TREE IS
                            SELECT * FROM MST_ORG
                                     START WITH ORG_ID = V_ORGID     
                                     CONNECT BY PRIOR ORG_ID = PARENT_ID;
                     V_OT CUR_ORG_TREE%ROWTYPE;
                BEGIN
-                    -- FORÑ­»·
+                    -- FORå¾ªçŽ¯
                     FOR V_OT IN CUR_ORG_TREE LOOP
                         --DBMS_OUTPUT.PUT_LINE('V_D :' || V_DEPTID);
                         --DBMS_OUTPUT.PUT_LINE('V_DT:' || V_DT.DEPT_ID); 
                         INSERT INTO MST_ORG_REF VALUES(V_OT.ORG_ID, V_ORGID);
                     END LOOP;       
                END; 
-               -- ÏòÏÂ±éÀú                
+               -- å‘ä¸‹éåŽ†                
                V_I := V_ORGID_LIST.NEXT(V_I);                 
          END LOOP;         
     END;
