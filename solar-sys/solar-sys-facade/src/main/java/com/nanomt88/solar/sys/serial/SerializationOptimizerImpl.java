@@ -11,7 +11,6 @@ import com.alibaba.fastjson.JSONObject;
  * <B>模块名称：</B><BR>
  * <B>中文类名：</B><BR>
  * <B>概要说明：</B><BR>
- * @author bhz（alienware）
  * @since 2016年5月19日
  */
 public class SerializationOptimizerImpl implements SerializationOptimizer {

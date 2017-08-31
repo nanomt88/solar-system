@@ -83,7 +83,7 @@ public class BaseJdbcDao {
      * @return Date 当前时间
      */
     public Date getCurrentTime() {
-        return this.getJdbcTemplate().queryForObject("SELECT SYSTIMESTAMP FROM DUAL", Date.class);
+        return this.getJdbcTemplate().queryForObject("SELECT now() FROM DUAL", Date.class);
     }
 
     /**
@@ -163,7 +163,7 @@ public class BaseJdbcDao {
      * @return String 唯一键值
      */
     public String generateKey() {
-        String sql = "SELECT '0000' || TO_CHAR(SYSTIMESTAMP, 'YYYYMMDD') FROM DUAL ";
+        String sql = "SELECT '0000' || TO_CHAR(now(), 'YYYYMMDD') FROM DUAL ";
         String pre = this.getJdbcTemplate().queryForObject(sql, String.class);
         String uid = UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
         return pre + uid.substring(12);

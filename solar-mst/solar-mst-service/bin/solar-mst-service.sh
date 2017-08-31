@@ -1,13 +1,13 @@
 #!/bin/sh
 ## java env
-export JAVA_HOME=/usr/local/jdk1.7
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-3.b12.el7_3.x86_64
 export JRE_HOME=$JAVA_HOME/jre
 
 ## exec shell name
-EXEC_SHELL_NAME=sys-service\.sh
+EXEC_SHELL_NAME=solar-mst-service\.sh
 ## service name
-SERVICE_NAME=bhz-sys-service
-SERVICE_DIR=/usr/local/workspace/sys-service
+SERVICE_NAME=solar-mst-service
+SERVICE_DIR=/home/www/solar/solar-mst-service
 JAR_NAME=$SERVICE_NAME\.jar
 PID=$SERVICE_NAME\.pid
 

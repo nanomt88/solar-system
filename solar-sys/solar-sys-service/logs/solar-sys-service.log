@@ -1,0 +1,501 @@
+2017-08-30 07:35:46,944 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-08-30 07:35:46,980 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:35:47,651 ERROR [org.logicalcobwebs.proxool.null] - Couldn't load class com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.logicalcobwebs.proxool.ConnectionPool.setDefinition(ConnectionPool.java:740)
+	at org.logicalcobwebs.proxool.ConnectionPool.<init>(ConnectionPool.java:115)
+	at org.logicalcobwebs.proxool.ConnectionPoolManager.createConnectionPool(ConnectionPoolManager.java:93)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:109)
+	at org.logicalcobwebs.proxool.ProxoolDataSource.registerPool(ProxoolDataSource.java:140)
+	at org.logicalcobwebs.proxool.ProxoolDataSource.getConnection(ProxoolDataSource.java:94)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:391)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+2017-08-30 07:35:47,661 ERROR [org.logicalcobwebs.proxool.ProxoolDataSource] - Problem getting connection
+org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.logicalcobwebs.proxool.ConnectionPool.setDefinition(ConnectionPool.java:743)
+	at org.logicalcobwebs.proxool.ConnectionPool.<init>(ConnectionPool.java:115)
+	at org.logicalcobwebs.proxool.ConnectionPoolManager.createConnectionPool(ConnectionPoolManager.java:93)
+	at org.logicalcobwebs.proxool.ProxoolFacade.registerConnectionPool(ProxoolFacade.java:109)
+	at org.logicalcobwebs.proxool.ProxoolDataSource.registerPool(ProxoolDataSource.java:140)
+	at org.logicalcobwebs.proxool.ProxoolDataSource.getConnection(ProxoolDataSource.java:94)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:391)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+2017-08-30 07:35:47,664 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:391)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.logicalcobwebs.proxool.ProxoolDataSource.getConnection(ProxoolDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 28 more
+2017-08-30 07:35:47,674 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver, dubbo version: 2.8.4, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:391)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: java.sql.SQLException: org.logicalcobwebs.proxool.ProxoolException: Couldn't load class com.mysql.jdbc.Driver
+	at org.logicalcobwebs.proxool.ProxoolDataSource.getConnection(ProxoolDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 28 more
+2017-08-30 07:35:47,675 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:35:47,676 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:37:51,075 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-08-30 07:37:51,115 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:37:52,574 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:416)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at com.mysql.jdbc.Wrapper$$EnhancerByProxool$$5634903b.executeQuery(<generated>)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:455)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:405)
+	... 27 more
+2017-08-30 07:37:52,596 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list', dubbo version: 2.8.4, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:416)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at com.mysql.jdbc.Wrapper$$EnhancerByProxool$$5634903b.executeQuery(<generated>)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:455)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:405)
+	... 27 more
+2017-08-30 07:37:52,598 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:37:52,598 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
+2017-08-30 07:37:52,600 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:37:52,600 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
+2017-08-30 07:37:52,601 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
+2017-08-30 07:41:01,648 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-08-30 07:41:01,686 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:41:02,993 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:416)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$e0a0ee6b.executeQuery(<generated>)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:455)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:405)
+	... 27 more
+2017-08-30 07:41:03,004 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list', dubbo version: 2.8.4, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserDao': Injection of autowired dependencies failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT SYSTIMESTAMP FROM DUAL]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:416)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:491)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:497)
+	at com.nanomt88.solar.dao.BaseJdbcDao.getCurrentTime(BaseJdbcDao.java:86)
+	at com.nanomt88.solar.dao.BaseJdbcDao.initJdbcTemplate(BaseJdbcDao.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 14 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'SYSTIMESTAMP' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2547)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2505)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$e0a0ee6b.executeQuery(<generated>)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:455)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:405)
+	... 27 more
+2017-08-30 07:41:03,007 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:41:03,007 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
+2017-08-30 07:41:03,008 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:41:03,008 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
+2017-08-30 07:41:03,012 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
+2017-08-30 07:43:26,883 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-08-30 07:43:26,921 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:28,472 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to local registry, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:28,472 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:28,473 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service com.nanomt88.solar.sys.facade.SysUserFacade url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408 to registry registry://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&organization=dubbox&owner=programmer&pid=28436&registry=zookeeper&timestamp=1504050208345, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:29,208 INFO [org.I0Itec.zkclient.ZkEventThread] - Starting ZkClient event thread.
+2017-08-30 07:43:33,751 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+2017-08-30 07:43:33,752 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:host.name=ZBOOK-TCDD
+2017-08-30 07:43:33,753 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.version=1.8.0_65
+2017-08-30 07:43:33,753 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.vendor=Oracle Corporation
+2017-08-30 07:43:33,754 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.home=D:\ProgramFiles\Java\jdk1.8.0_65\jre
+2017-08-30 07:43:33,754 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.class.path=target/solar-sys-service.jar
+2017-08-30 07:43:33,755 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.library.path=D:\ProgramFiles\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\ProgramFiles\Git\mingw64\bin;D:\ProgramFiles\Git\usr\bin;D:\Users\TCDD\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Users\ZBOOK-17\AppData\Local\Microsoft\WindowsApps;D:\ProgramFiles\Git\cmd;D:\ProgramFiles\Git\mingw64\bin;D:\ProgramFiles\Git\usr\bin;D:\ProgramFiles\Java\jdk1.8.0_65\bin;D:\ProgramFiles\apache-maven-3.5.0\bin;.
+2017-08-30 07:43:33,755 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.io.tmpdir=C:\Users\ZBOOK-17\AppData\Local\Temp\
+2017-08-30 07:43:33,756 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:java.compiler=<NA>
+2017-08-30 07:43:33,756 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:os.name=Windows 10
+2017-08-30 07:43:33,757 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:os.arch=amd64
+2017-08-30 07:43:33,757 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:os.version=10.0
+2017-08-30 07:43:33,758 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:user.name=ZBOOK-17
+2017-08-30 07:43:33,776 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:user.home=C:\Users\ZBOOK-17
+2017-08-30 07:43:33,778 INFO [org.apache.zookeeper.ZooKeeper] - Client environment:user.dir=D:\workspace\github\solar-system\solar-sys\solar-sys-service
+2017-08-30 07:43:33,780 INFO [org.apache.zookeeper.ZooKeeper] - Initiating client connection, connectString=192.168.1.143:2181 sessionTimeout=60000 watcher=org.I0Itec.zkclient.ZkClient@4cc547a
+2017-08-30 07:43:33,805 INFO [org.I0Itec.zkclient.ZkClient] - Waiting for keeper state SyncConnected
+2017-08-30 07:43:38,350 INFO [org.apache.zookeeper.ClientCnxn] - Opening socket connection to server 192.168.1.143/192.168.1.143:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-08-30 07:43:38,354 INFO [org.apache.zookeeper.ClientCnxn] - Socket connection established to 192.168.1.143/192.168.1.143:2181, initiating session
+2017-08-30 07:43:38,394 INFO [org.apache.zookeeper.ClientCnxn] - Session establishment complete on server 192.168.1.143/192.168.1.143:2181, sessionid = 0x15e305798e70000, negotiated timeout = 40000
+2017-08-30 07:43:38,397 INFO [org.I0Itec.zkclient.ZkClient] - zookeeper state changed (SyncConnected)
+2017-08-30 07:43:38,399 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,431 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,450 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, urls: [empty://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,483 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to local registry, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,483 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,483 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service com.nanomt88.solar.sys.facade.SysUserFacade url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481 to registry registry://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&organization=dubbox&owner=programmer&pid=28436&registry=zookeeper&timestamp=1504050208345, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,583 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.74.1:20880, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,585 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Optimizing the serialization process for Kryo, FST, etc..., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,588 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,597 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:38,607 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, urls: [empty://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,762 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: com.nanomt88.solar.sys.facade.SysUserFacade, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,765 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to local registry, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,766 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,766 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service com.nanomt88.solar.sys.facade.SysUserFacade url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765 to registry registry://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&organization=dubbox&owner=programmer&pid=28436&registry=zookeeper&timestamp=1504050230764, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,767 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,776 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,781 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, urls: [empty://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,786 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to local registry, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,787 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.nanomt88.solar.sys.facade.SysUserFacade to url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,787 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service com.nanomt88.solar.sys.facade.SysUserFacade url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785 to registry registry://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&organization=dubbox&owner=programmer&pid=28436&registry=zookeeper&timestamp=1504050230764, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,788 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,795 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,801 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, urls: [empty://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:43:50,803 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,639 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,640 INFO [org.logicalcobwebs.proxool.null] - Shutting down 'null' pool immediately [Shutdown Hook]
+2017-08-30 07:55:17,641 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [zookeeper://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&interface=com.alibaba.dubbo.registry.RegistryService&organization=dubbox&owner=programmer&pid=28436&timestamp=1504050208345], dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,642 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy registry:zookeeper://192.168.1.143:2181/com.alibaba.dubbo.registry.RegistryService?application=solar-sys-service&dubbo=2.8.4&interface=com.alibaba.dubbo.registry.RegistryService&organization=dubbox&owner=programmer&pid=28436&timestamp=1504050208345, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,642 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unregister: dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,645 INFO [org.logicalcobwebs.proxool.PrototyperController] - Stopping Prototyper thread
+2017-08-30 07:55:17,645 INFO [org.logicalcobwebs.proxool.HouseKeeperController] - Stopping HouseKeeper thread
+2017-08-30 07:55:17,665 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unregister url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,673 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unregister: rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,677 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unregister url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,693 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unregister: dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,704 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unregister url dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,704 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unregister: rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,707 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unregister url rest://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,708 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unsubscribe: provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,708 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unsubscribe url provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050218481, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,708 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unsubscribe: provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,709 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unsubscribe url provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050208408, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,709 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unsubscribe: provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,709 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unsubscribe url provider://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,710 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Unsubscribe: provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,710 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unsubscribe url provider://192.168.74.1:8888/solar-sys-service/com.nanomt88.solar.sys.facade.SysUserFacade?accepts=500&anyhost=true&application=solar-sys-service&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1504050230765, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,710 INFO [org.I0Itec.zkclient.ZkEventThread] - Terminate ZkClient event thread.
+2017-08-30 07:55:17,715 INFO [org.apache.zookeeper.ZooKeeper] - Session: 0x15e305798e70000 closed
+2017-08-30 07:55:17,715 INFO [org.apache.zookeeper.ClientCnxn] - EventThread shut down
+2017-08-30 07:55:17,715 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Close dubbo server: /192.168.74.1:20880, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,716 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.74.1:20880, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,719 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.74.1:20880/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,722 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/com.nanomt88.solar.sys.facade.SysUserFacade?anyhost=true&application=solar-sys-service&dubbo=2.8.4&generic=false&interface=com.nanomt88.solar.sys.facade.SysUserFacade&methods=generateKey,getById,getList,insert&optimizer=com.nanomt88.solar.sys.serial.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=28436&revision=1.0-SNAPSHOT&serialization=kryo&side=provider&timestamp=1504050230785, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,725 INFO [com.alibaba.dubbo.rpc.protocol.rest.RestProtocol] -  [DUBBO] Closing the rest server at 192.168.74.1:8888, dubbo version: 2.8.4, current host: 127.0.0.1
+2017-08-30 07:55:17,795 INFO [com.alibaba.dubbo.rpc.protocol.rest.RestProtocol] -  [DUBBO] Closing rest clients, dubbo version: 2.8.4, current host: 127.0.0.1

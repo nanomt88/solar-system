@@ -16,7 +16,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
 //启动缓存配置
-@ComponentScan("bhz")
+@ComponentScan("com.nanomt88.solar")
 @PropertySource("classpath:redis.properties")
 public class ClusterConfig {
 

@@ -29,7 +29,7 @@ public class SysFileComDao extends BaseJdbcDao {
         if (data == null) {
             return 0;
         }
-        String sql = "INSERT INTO SYS_FILE(KEY, TYPE, NAME, EXT, BYTES, DATA_PATH, DATA_GROUP, EXPIRED, DESC_INFO, UPDATE_BY, UPDATE_TIME) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, SYSTIMESTAMP)";
+        String sql = "INSERT INTO SYS_FILE(KEY, TYPE, NAME, EXT, BYTES, DATA_PATH, DATA_GROUP, EXPIRED, DESC_INFO, UPDATE_BY, UPDATE_TIME) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now())";
         Object[] args = new Object[10];
         args[0] = data.getKey();
         args[1] = data.getType();
@@ -71,7 +71,7 @@ public class SysFileComDao extends BaseJdbcDao {
             return 0;
         }
         if (expired == null) {
-            return super.getJdbcTemplate().update("UPDATE SYS_FILE SET EXPIRED = SYSTIMESTAMP WHERE KEY = ?", key);
+            return super.getJdbcTemplate().update("UPDATE SYS_FILE SET EXPIRED = now() WHERE KEY = ?", key);
         }
         return super.getJdbcTemplate().update("UPDATE SYS_FILE SET EXPIRED = ? WHERE KEY = ?", expired, key);
     }   

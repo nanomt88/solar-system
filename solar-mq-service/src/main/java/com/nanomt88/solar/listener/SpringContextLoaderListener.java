@@ -14,7 +14,6 @@ import com.alibaba.druid.proxy.DruidDriver;
  * 
  * <br>类 名: SpringContextLoaderListener 
  * <br>描 述: Spring环境加载监听器
- * <br>作 者: bhz
  * <br>创 建： 2013年5月6日 
  * <br>版 本：v1.0.0 
  * <br>

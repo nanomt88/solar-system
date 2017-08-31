@@ -66,7 +66,7 @@ public class MstSiteDao extends BaseJdbcDao {
         if (!StringUtils.isBlank(json.getString("BUILD_DATE"))) {
         	buildDate = DateUtils.parseDate(json.getString("BUILD_DATE"), Const.FORMAT_DATE);
         }        
-        String sql = " INSERT INTO MST_SITE (SITE_ID, SITE_NAME, SITE_TYPE, DIST_CODE, ORG_ID, TEL, BUILD_DATE, DESC_INFO, MASTER, LINE1, LINE2, PARKS, TOTAL_AREA, SITE_IMG, CREATE_BY, CREATE_TIME, UPDATE_BY, UPDATE_TIME) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, SYSTIMESTAMP, ?, SYSTIMESTAMP)";
+        String sql = " INSERT INTO MST_SITE (SITE_ID, SITE_NAME, SITE_TYPE, DIST_CODE, ORG_ID, TEL, BUILD_DATE, DESC_INFO, MASTER, LINE1, LINE2, PARKS, TOTAL_AREA, SITE_IMG, CREATE_BY, CREATE_TIME, UPDATE_BY, UPDATE_TIME) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), ?, now())";
         Object[] args = { super.generateKey(), json.getString("SITE_NAME"), json.getString("SITE_TYPE"),
     			json.getString("DIST_CODE"), json.getString("ORG_ID"), json.getString("TEL"),
                 buildDate, json.getString("DESC_INFO"), json.getString("MASTER"), json.getString("LINE1"),
@@ -80,7 +80,7 @@ public class MstSiteDao extends BaseJdbcDao {
         if (!StringUtils.isBlank(json.getString("BUILD_DATE"))) {
         	buildDate = DateUtils.parseDate(json.getString("BUILD_DATE"), Const.FORMAT_DATE);
         }        
-        String sql = " UPDATE MST_SITE SET SITE_NAME = ?, SITE_TYPE = ?, DIST_CODE = ?, ORG_ID = ?, TEL = ?, BUILD_DATE = ?, DESC_INFO = ?, MASTER = ?, LINE1 = ?, LINE2 = ?, PARKS = ?, TOTAL_AREA = ?, SITE_IMG = ?, UPDATE_BY = ?, UPDATE_TIME = SYSTIMESTAMP WHERE SITE_ID = ? ";
+        String sql = " UPDATE MST_SITE SET SITE_NAME = ?, SITE_TYPE = ?, DIST_CODE = ?, ORG_ID = ?, TEL = ?, BUILD_DATE = ?, DESC_INFO = ?, MASTER = ?, LINE1 = ?, LINE2 = ?, PARKS = ?, TOTAL_AREA = ?, SITE_IMG = ?, UPDATE_BY = ?, UPDATE_TIME = now() WHERE SITE_ID = ? ";
         Object[] args = { json.getString("SITE_NAME"), json.getString("SITE_TYPE"), json.getString("DIST_CODE"),
                 json.getString("ORG_ID"), json.getString("TEL"), buildDate, json.getString("DESC_INFO"), json.getString("MASTER"), 
                 json.getString("LINE1"), json.getString("LINE2"), json.getString("PARKS"), json.getString("TOTAL_AREA"),

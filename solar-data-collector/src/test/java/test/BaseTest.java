@@ -19,8 +19,7 @@ import com.nanomt88.solar.data.service.DatCheckDataService;
 
 /** 
  * <br>类 名: BaseTest 
- * <br>描 述: 描述类完成的主要功能 
- * <br>作 者: bhz
+ * <br>描 述: 描述类完成的主要功能
  * <br>创 建： 2013年5月8日 
  * <br>版 本：v1.0.0 
  * <br>
