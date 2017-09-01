@@ -11,6 +11,7 @@ import com.nanomt88.solar.mapper.SubscribeMapper;
 @Service("subscribeService")
 public class SubscribeService {
 
+	@Autowired
 	private SubscribeMapper subscribeMapper;
 
 	public SubscribeMapper getSubscribeMapper() {

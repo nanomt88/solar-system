@@ -9,6 +9,7 @@ import org.apache.commons.lang3.time.DateFormatUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.nanomt88.solar.entity.Subscribe;
@@ -37,7 +38,7 @@ public class MQReloadJob {
 		this.subscribeService = subscribeService;
 	}
 
-	//@Scheduled(initialDelay=1000, fixedDelay=3000)
+	@Scheduled(initialDelay=1000, fixedDelay=3000)
 	public void reloadJob(){
 		
 		List<Subscribe> list = this.subscribeService.findAllSubscribe();

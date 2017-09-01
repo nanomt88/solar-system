@@ -8,14 +8,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 
-<link rel="stylesheet" type="text/css" href="/bhz-mst/css/common-neptune.css" />
-<link rel="stylesheet" type="text/css" href="/bhz-mst/extjs/resources/ext-theme-neptune/ext-theme-neptune-all.css" />
+<link rel="stylesheet" type="text/css" href="/solar-mst-web/css/common-neptune.css" />
+<link rel="stylesheet" type="text/css" href="/solar-mst-web/extjs/resources/ext-theme-neptune/ext-theme-neptune-all.css" />
 <!-- 
-<link rel="stylesheet" type="text/css" href="/bhz-mst/css/common.css" />
-<link rel="stylesheet" type="text/css" href="/bhz-mst/extjs/resources/ext-theme-classic/ext-theme-classic-all.css" />
+<link rel="stylesheet" type="text/css" href="/solar-mst-web/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/solar-mst-web/extjs/resources/ext-theme-classic/ext-theme-classic-all.css" />
 -->
-<script type="text/javascript" charset="utf-8" src="/bhz-mst/extjs/ext-all.gzjs"></script>
-<script type="text/javascript" charset="utf-8" src="/bhz-mst/extjs/ext-lang-zh_CN.js"></script>
+<script type="text/javascript" charset="utf-8" src="/solar-mst-web/extjs/ext-all.gzjs"></script>
+<script type="text/javascript" charset="utf-8" src="/solar-mst-web/extjs/ext-lang-zh_CN.js"></script>
 <script type="text/javascript" charset="utf-8">
 
 Ext.onReady(function(){
