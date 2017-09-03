@@ -7,7 +7,7 @@
         <result column="url" property="url" jdbcType="VARCHAR"/>
         <result column="topic" property="topic" jdbcType="VARCHAR"/>
         <result column="tag" property="tag" jdbcType="VARCHAR"/>
-        <result column="gro" property="gro" jdbcType="VARCHAR"/>
+        <result column="groupName" property="groupName" jdbcType="VARCHAR"/>
         <result column="consumeFromWhere" property="consumefromwhere" jdbcType="VARCHAR"/>
         <result column="consumeThreadMin" property="consumethreadmin" jdbcType="INTEGER"/>
         <result column="consumeThreadMax" property="consumethreadmax" jdbcType="INTEGER"/>
@@ -21,7 +21,7 @@
         <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
     </resultMap>
     <sql id="Base_Column_List">
-    id, proname, url, topic, tag, gro, consumeFromWhere, consumeThreadMin, consumeThreadMax, 
+    id, proname, url, topic, tag, groupName, consumeFromWhere, consumeThreadMin, consumeThreadMax,
     pullThresholdForQueue, consumeMessageBatchMaxSize, pullBatchSize, pullInterval, businesskey, 
     status, create_time, update_time
   </sql>
@@ -37,13 +37,13 @@
   </delete>
     <insert id="insert" parameterType="com.nanomt88.solar.entity.Subscribe">
     insert into mq_subscribe (id, proname, url,
-      topic, tag, gro, consumeFromWhere, 
+      topic, tag, groupName, consumeFromWhere,
       consumeThreadMin, consumeThreadMax, pullThresholdForQueue, 
       consumeMessageBatchMaxSize, pullBatchSize, 
       pullInterval, businesskey, status, 
       create_time, update_time)
-    values (#{id,jdbcType=INTEGER}, #{proname,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, 
-      #{topic,jdbcType=VARCHAR}, #{tag,jdbcType=VARCHAR}, #{gro,jdbcType=VARCHAR}, #{consumefromwhere,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{proname,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{topic,jdbcType=VARCHAR},
+      #{tag,jdbcType=VARCHAR}, #{groupName,jdbcType=VARCHAR}, #{consumefromwhere,jdbcType=VARCHAR},
       #{consumethreadmin,jdbcType=INTEGER}, #{consumethreadmax,jdbcType=INTEGER}, #{pullthresholdforqueue,jdbcType=INTEGER},
       #{consumemessagebatchmaxsize,jdbcType=INTEGER}, #{pullbatchsize,jdbcType=INTEGER},
       #{pullinterval,jdbcType=INTEGER}, #{businesskey,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR},
@@ -67,8 +67,8 @@
             <if test="tag != null">
                 tag,
             </if>
-            <if test="gro != null">
-                gro,
+            <if test="groupName != null">
+                groupName,
             </if>
             <if test="consumefromwhere != null">
                 consumeFromWhere,
@@ -120,8 +120,8 @@
             <if test="tag != null">
                 #{tag,jdbcType=VARCHAR},
             </if>
-            <if test="gro != null">
-                #{gro,jdbcType=VARCHAR},
+            <if test="groupName != null">
+                #{groupName,jdbcType=VARCHAR},
             </if>
             <if test="consumefromwhere != null">
                 #{consumefromwhere,jdbcType=VARCHAR},
@@ -173,8 +173,8 @@
             <if test="tag != null">
                 tag = #{tag,jdbcType=VARCHAR},
             </if>
-            <if test="gro != null">
-                gro = #{gro,jdbcType=VARCHAR},
+            <if test="groupName != null">
+                groupName = #{groupName,jdbcType=VARCHAR},
             </if>
             <if test="consumefromwhere != null">
                 consumeFromWhere = #{consumefromwhere,jdbcType=VARCHAR},
@@ -218,7 +218,7 @@
       url = #{url,jdbcType=VARCHAR},
       topic = #{topic,jdbcType=VARCHAR},
       tag = #{tag,jdbcType=VARCHAR},
-      gro = #{gro,jdbcType=VARCHAR},
+      groupName = #{groupName,jdbcType=VARCHAR},
       consumeFromWhere = #{consumefromwhere,jdbcType=VARCHAR},
       consumeThreadMin = #{consumethreadmin,jdbcType=INTEGER},
       consumeThreadMax = #{consumethreadmax,jdbcType=INTEGER},
@@ -236,12 +236,11 @@
     <!-- ******************************** 自定义SQL ************************************** -->
 
     <select id="findAllSubscribe" resultMap="BaseResultMap">
-  	SELECT * FROM SUBSCRIBE;
-  
+  	SELECT * FROM mq_subscribe;
   </select>
 
     <select id="findByPage" resultType="map" resultMap="BaseResultMap">
-  	SELECT * FROM SUBSCRIBE S WHERE S.TOPIC LIKE CONCAT(#{TOPIC},"%");  
+  	SELECT * FROM mq_subscribe S WHERE S.TOPIC LIKE CONCAT(#{TOPIC},"%");
   </select>
 
 

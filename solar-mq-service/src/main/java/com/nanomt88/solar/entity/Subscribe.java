@@ -13,7 +13,9 @@ public class Subscribe {
 
     private String tag;
 
-    private String gro;
+    private String groupName;
+
+    private String consumeGroup;
 
     private String consumefromwhere;
 
@@ -77,12 +79,12 @@ public class Subscribe {
         this.tag = tag == null ? null : tag.trim();
     }
 
-    public String getGro() {
-        return gro;
+    public String getGroupName() {
+        return groupName;
     }
 
-    public void setGro(String gro) {
-        this.gro = gro == null ? null : gro.trim();
+    public void setGroupName(String groupName) {
+        this.groupName = groupName == null ? null : groupName.trim();
     }
 
     public String getConsumefromwhere() {
@@ -171,5 +173,13 @@ public class Subscribe {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getConsumeGroup() {
+        return consumeGroup;
+    }
+
+    public void setConsumeGroup(String consumeGroup) {
+        this.consumeGroup = consumeGroup;
     }
 }

@@ -54,14 +54,14 @@ public class BaseTest {
 //		s.setUrl("http://localhost:8080/test1.html");
 //		s.setTopic("topic1");
 //		s.setTag("tag1");
-//		s.setGro("g1");
+//		s.setGroupName("g1");
 //		s.setBusinesskey("{id:\"1\",name:\"aaa\"}");
 		
 		s.setProname("oa管理系统");
 		s.setUrl("http://localhost:8080/test2.html");
 		s.setTopic("topic2");
 		s.setTag("tag2");
-		s.setGro("g2");	
+		s.setGroupName("g2");
 		s.setBusinesskey("{id:\"2\",name:\"bbb\"}");
 		
 		s.setConsumefromwhere("CONSUME_FROM_LAST_OFFSET");

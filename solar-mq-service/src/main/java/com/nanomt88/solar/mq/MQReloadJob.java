@@ -38,9 +38,9 @@ public class MQReloadJob {
 		this.subscribeService = subscribeService;
 	}
 
-	@Scheduled(initialDelay=1000, fixedDelay=3000)
+//	@Scheduled(cron = "0/5 * * * * ? ")
 	public void reloadJob(){
-		
+		System.out.println("========================> reloadJob start ... ");
 		List<Subscribe> list = this.subscribeService.findAllSubscribe();
 		for (Subscribe subscribe : list) {
 			int id = subscribe.getId();
@@ -50,7 +50,7 @@ public class MQReloadJob {
 			String url = subscribe.getUrl();
 			String topic = subscribe.getTopic();
 			String tag = subscribe.getTag();
-			String gro = subscribe.getGro();
+			String groupName = subscribe.getGroupName();
 			String businessKey = subscribe.getBusinesskey();
 			String status = subscribe.getStatus();
 			String updateTime = DateFormatUtils.format(subscribe.getUpdateTime(), "yyyy-MM-dd HH:mm:ss");
@@ -58,6 +58,8 @@ public class MQReloadJob {
 			//配置参数：
 			
 			Map<String, String> options = new HashMap<String, String>();
+			String consumeGroup = subscribe.getConsumeGroup();
+			options.put("consumeGroup", consumeGroup);
 			String consumeFromWhere = subscribe.getConsumefromwhere();
 			options.put("consumeFromWhere", consumeFromWhere);
 			String consumeThreadMin = subscribe.getConsumethreadmin();
@@ -87,7 +89,7 @@ public class MQReloadJob {
 					MQListener mqListener = new MQListener(consumerId, proName, url, businessKey);
 					//传递参数
 					MQConsumer consumer = MQFactory.getInstance().createConsumer(consumerId, 
-							gro, 
+							groupName,
 							this.environment.getProperty("rocketmq.nameservers"),
 							topic, 
 							tag, 
@@ -105,6 +107,7 @@ public class MQReloadJob {
 				}
 			} else ;
 		}
+		System.out.println("========================> reloadJob end ... ");
 	}
 	
 	

@@ -14,7 +14,7 @@ import com.alibaba.rocketmq.common.message.MessageExt;
  * @author alienware
  *
  */
-class MQListener implements MessageListenerOrderly {
+public class MQListener implements MessageListenerOrderly {
 
 	//传入业务参数
 	private String id;

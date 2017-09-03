@@ -26,6 +26,9 @@
 
 	<!-- 生成远程服务接口配置 -->
 	<dubbo:reference interface="com.nanomt88.solar.sys.facade.SysUserFacade" id="sysUserFacade" />
-	
-	
+
+    <!--<dubbo:protocol host="http://10.20.160.198/wiki/display/dubbo/192.168.1.112" />-->
+
+
+
 </beans>

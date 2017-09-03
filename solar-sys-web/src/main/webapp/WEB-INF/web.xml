@@ -82,12 +82,12 @@
 	    <init-param>  
 	        <param-name>casServerLoginUrl</param-name>  
 	        <!--这里为CAS服务器的地址，必须使用所创建的域名，不然验证证书不通过 -->
-	        <param-value>https://www.tcdd.com:8443/cas/login</param-value>
+	        <param-value>https://www.tcdd.com:8443/cas-server/login</param-value>
 	    </init-param>  
 	    <init-param>  
 	        <param-name>serverName</param-name> 
 	        <!--这里的server是服务端的IP-->   
-	        <param-value>http://192.168.1.183:8080</param-value>  
+	        <param-value>http://192.168.1.142:8006</param-value>
 	    </init-param>  
 	</filter>  
 	<filter-mapping>  
@@ -102,11 +102,11 @@
 	    <init-param>  
 	        <param-name>casServerUrlPrefix</param-name>  
 	        <!--这里为CAS服务器的地址，必须使用所创建的域名，不然验证证书不通过 -->
-	        <param-value>https://www.tcdd.com:8443/cas</param-value>
+	        <param-value>https://www.tcdd.com:8443/cas-server</param-value>
 	    </init-param>  
 	    <init-param>  
 	        <param-name>serverName</param-name>  
-	        <param-value>http://192.168.1.183:8080</param-value>  
+	        <param-value>http://192.168.1.142:8006</param-value>
 	    </init-param>  
 	</filter>  
 	<filter-mapping>  

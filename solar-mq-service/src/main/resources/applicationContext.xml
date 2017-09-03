@@ -26,12 +26,10 @@
 	
 	<!-- 引入Schedule配置 -->
 	<import resource="classpath:spring-scheduler.xml"/>
-	
+
 	<!-- 注解解析 -->
 	<context:annotation-config />
-	
-    <context:component-scan base-package="com.nanomt88.solar" />
-	
+
 	<!-- 动态代理 -->
 	<aop:aspectj-autoproxy/>
 </beans>

@@ -6,6 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 实现MQ工厂
@@ -14,7 +16,9 @@ import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
  */
 public class MQFactory {
 
-	private static class SingletonHolder {
+    private Logger LOGGER = LoggerFactory.getLogger(MQFactory.class);
+
+    private static class SingletonHolder {
 		static final MQFactory instance = new MQFactory();
 	}
 	
@@ -39,6 +43,8 @@ public class MQFactory {
 			MQConsumer consumer = new MQConsumer(consumerId, groupName, namesrvAddr);
 			consumer.subscribe(topic, tag);
 			consumer.registerMessageListener(mqListener);
+			//消费组名称
+			String consumerGroup = options.get("consumeGroup");
 			//设置消费者其它参数
 			/**Consumer 启动后，默认从什么位置开始消费:默认CONSUME_FROM_LAST_OFFSET*/
 			String consumeFromWhere=options.get("consumeFromWhere");
@@ -61,7 +67,10 @@ public class MQFactory {
 				}else if(StringUtils.equals(consumeFromWhere, "CONSUME_FROM_FIRST_OFFSET")){
 					consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 				}
-			}		
+			}
+			if(StringUtils.isNotBlank(consumerGroup)){
+				consumer.setConsumerGroup(consumerGroup);
+			}
 			if(StringUtils.isNotBlank(consumeThreadMin)){
 				consumer.setConsumeThreadMin(Integer.parseInt(consumeThreadMin));
 			}
@@ -81,6 +90,8 @@ public class MQFactory {
 				consumer.setPullInterval(Integer.parseInt(pullInterval));
 			}
 			consumers.put(consumerId, consumer);
+            consumer.start();
+            LOGGER.info(" 启动 Consumer：[{}]", consumerId);
 			return consumer;			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -90,6 +101,7 @@ public class MQFactory {
 	
 	public void stopConsumer(String consumerId){
 		if(consumers.get(consumerId)!=null){
+            LOGGER.info(" 关闭 Consumer：[{}]", consumerId);
 			consumers.get(consumerId).shutdown();
 			consumers.remove(consumerId);
 		}
@@ -97,9 +109,9 @@ public class MQFactory {
 	
 	public void stopConsumers(){
 		for(String consumerId:consumers.keySet()){
-			consumers.get(consumerId).shutdown();
+            LOGGER.info(" 关闭 Consumer：[{}]", consumerId);
+            consumers.get(consumerId).shutdown();
 		}
 		consumers.clear();
 	}
-			
 }
